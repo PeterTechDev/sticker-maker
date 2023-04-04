@@ -24,9 +24,15 @@ public class App {
 
         //Parse data (title, poster, rating)
         JsonParser parser = new JsonParser();
-        List<Map<String, String>> MoviesList = parser.parse(body);
+        List<Map<String, String>> moviesList = parser.parse(body);
 
 
         //display data
+        for (Map<String, String> movie: moviesList) {
+            System.out.println(movie.get("title"));
+            System.out.println(movie.get("image"));
+            System.out.println(movie.get("imDbRating"));
+            System.out.println();
+        }
     }
 }
