@@ -29,9 +29,9 @@ public class App {
 
         //display data
         for (Map<String, String> movie: moviesList) {
-            System.out.println(movie.get("title"));
-            System.out.println(movie.get("image"));
-            System.out.println(movie.get("imDbRating"));
+            System.out.println("Titulo: " + movie.get("title"));
+            System.out.println("Link do poster: " + movie.get("image"));
+            System.out.println("Nota: " + movie.get("imDbRating"));
             System.out.println();
         }
     }
